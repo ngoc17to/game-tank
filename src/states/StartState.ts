@@ -13,8 +13,14 @@ class StartState extends State{
 
     enter(): void {
         console.log("StartState")
-        // this.scene.scene.restart()
         this.scene.scoreManager.resetScore()
+        this.scene.getPlayer().reset()
+        const enemies = this.scene.getEnemies().getChildren() as Enemy[];
+        
+        for (let i = enemies.length - 1; i >= 0; i--) {
+            const enemy = enemies[i];
+            enemy.reset();
+        }
         this.stateMachine.transition('play')
     }
     exit(): void {

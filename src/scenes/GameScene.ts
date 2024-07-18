@@ -160,7 +160,7 @@ export class GameScene extends Phaser.Scene {
         this.gameOverScreen = new GameOverScreen(this, width / 2, height / 2)
         this.gameOverScreen.setVisible(false)
         this.transition = new Transition(this)
-        this.stateMachine = new StateMachine('start', {
+        this.stateMachine = new StateMachine('play', {
             start: new StartState(this),
             play: new PlayState(this),
             pause: new PauseState(this),

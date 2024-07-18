@@ -126,8 +126,8 @@ export class Player extends Phaser.GameObjects.Sprite {
 
     // Xoay thân tank theo hướng di chuyển
     if (this.body.velocity.x !== 0 || this.body.velocity.y !== 0) {
-        const angle = Math.atan2(this.body.velocity.y, this.body.velocity.x);
-        this.rotation = Phaser.Math.Angle.RotateTo(this.rotation, angle + Math.PI/2, 0.1);
+      const angle = Math.atan2(this.body.velocity.y, this.body.velocity.x);
+      this.rotation = Phaser.Math.Angle.RotateTo(this.rotation, angle + Math.PI/2, 0.1);
     }
   }
 
@@ -136,10 +136,10 @@ export class Player extends Phaser.GameObjects.Sprite {
     const shootDelay = 80;
     if(this.currentScene.stateMachine.getState() === 'play'){
       if (this.shootingKey.isDown || this.scene.input.activePointer.isDown) {
-          if (currentTime > this.lastShoot) {
-              this.shoot();
-              this.lastShoot = currentTime + shootDelay;
-          }
+        if (currentTime > this.lastShoot) {
+          this.shoot();
+          this.lastShoot = currentTime + shootDelay;
+        }
       }
     }
 }
