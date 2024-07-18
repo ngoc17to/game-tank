@@ -27,13 +27,6 @@ class OverState extends State{
         this.scene.pauseButton.disableInteractive()
     }
     exit(): void {
-        this.scene.getPlayer().reset()
-        const enemies = this.scene.getEnemies().getChildren() as Enemy[];
-        
-        for (let i = enemies.length - 1; i >= 0; i--) {
-            const enemy = enemies[i];
-            enemy.reset();
-        }
         this.scene.transition.fadeOut(this.scene.gameOverScreen);
     }
     execute(time: number, delta: number): void {
