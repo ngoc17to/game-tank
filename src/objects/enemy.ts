@@ -84,7 +84,7 @@ export class Enemy extends Phaser.GameObjects.Sprite {
       this.barrel.y = this.y;
       this.lifeBar.x = this.x;
       this.lifeBar.y = this.y;
-      // this.handleShooting();
+      this.handleShooting();
     } 
   }
 

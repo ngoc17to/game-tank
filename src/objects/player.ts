@@ -13,7 +13,7 @@ export class Player extends Phaser.GameObjects.Sprite {
   private initialPosition: { x: number, y: number };
   private acceleration: number = 1000;
   private deceleration: number = 1000;
-  private maxSpeed: number = 400;
+  private maxSpeed: number = 300;
   private lastMouseShoot: number = 0;
   // children
   private barrel: Phaser.GameObjects.Sprite;
