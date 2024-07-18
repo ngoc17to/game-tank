@@ -1,6 +1,6 @@
 import { GameScene } from '../scenes/GameScene';
 import { ISpriteConstructor } from '../types/sprite';
-import { Bullet } from './bullet';
+import { Bullet } from './Bullet';
 
 export class Enemy extends Phaser.GameObjects.Sprite {
   body: Phaser.Physics.Arcade.Body;
@@ -79,7 +79,7 @@ export class Enemy extends Phaser.GameObjects.Sprite {
   }
 
   update(): void {
-    if (this.active) {
+    if (this.active && this.state == 'alive') {
       this.barrel.x = this.x;
       this.barrel.y = this.y;
       this.lifeBar.x = this.x;

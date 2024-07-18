@@ -1,4 +1,4 @@
-import { Enemy } from "../objects/enemy";
+import { Enemy } from "../objects/Enemy";
 import { GameScene } from "../scenes/GameScene";
 import State from "../types/State";
 

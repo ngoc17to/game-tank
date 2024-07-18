@@ -1,5 +1,5 @@
-import { Enemy } from "../objects/enemy";
-import { Player } from "../objects/player";
+import { Enemy } from "../objects/Enemy";
+import { Player } from "../objects/Player";
 import { GameScene } from "../scenes/GameScene";
 import State from "../types/State";
 

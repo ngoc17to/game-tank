@@ -1,4 +1,4 @@
-import { Bullet } from './bullet';
+import { Bullet } from './Bullet';
 import { ISpriteConstructor } from '../types/sprite';
 import { GameScene } from '../scenes/GameScene';
 
@@ -170,6 +170,7 @@ private shoot(): void {
                 texture: 'bulletBlue'
             })
         );
+
         if(this.currentScene.isSoundOn) this.currentScene.shootSound.play();
     }
 }
