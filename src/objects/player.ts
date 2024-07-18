@@ -9,12 +9,10 @@ export class Player extends Phaser.GameObjects.Sprite {
   // variables
   private health: number;
   private lastShoot: number;
-  private speed: number;
   private initialPosition: { x: number, y: number };
   private acceleration: number = 1000;
-  private deceleration: number = 1000;
   private maxSpeed: number = 300;
-  private lastMouseShoot: number = 0;
+
   // children
   private barrel: Phaser.GameObjects.Sprite;
   private lifeBar: Phaser.GameObjects.Graphics;
@@ -47,7 +45,6 @@ export class Player extends Phaser.GameObjects.Sprite {
     // variables
     this.health = 1;
     this.lastShoot = 0;
-    this.speed = 200;
 
     // image
     this.setOrigin(0.5, 0.5);
