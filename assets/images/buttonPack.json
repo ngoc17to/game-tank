@@ -1,0 +1,56 @@
+{
+  "button": {
+    "files": [
+      {
+        "type": "image",
+        "key": "pause",
+        "url": "./assets/images/Pause/Default.png"
+      },
+      {
+        "type": "image",
+        "key": "pause_hover",
+        "url": "./assets/images/Pause/Hover.png"
+      },
+      {
+        "type": "image",
+        "key": "play",
+        "url": "./assets/images/Play/Default.png"
+      },
+      {
+        "type": "image",
+        "key": "play_hover",
+        "url": "./assets/images/Play/Hover.png"
+      },
+      {
+        "type": "image",
+        "key": "replay",
+        "url": "./assets/images/Repeat/Default.png"
+      },
+      {
+        "type": "image",
+        "key": "replay_hover",
+        "url": "./assets/images/Repeat/Hover.png"
+      },
+      {
+        "type": "image",
+        "key": "soundOn",
+        "url": "./assets/images/SoundOn/Default.png"
+      },
+      {
+        "type": "image",
+        "key": "soundOn_hover",
+        "url": "./assets/images/SoundOn/Hover.png"
+      },
+      {
+        "type": "image",
+        "key": "soundOff",
+        "url": "./assets/images/SoundOff/Default.png"
+      },
+      {
+        "type": "image",
+        "key": "soundOff_hover",
+        "url": "./assets/images/SoundOff/Hover.png"
+      }
+    ]
+  }
+}
